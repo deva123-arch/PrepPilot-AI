@@ -107,7 +107,7 @@ Graduating computer science and software engineering students preparing for tech
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
 │                        Browser Client (React 19)                       │
-│  - Storage Engine (localStorage + Redundant Auto-Backup Snapshot)     │
+│  - Storage Engine (localStorage + Redundant Auto-Backup Snapshot)      │
 │  - In-Flight Request Deduplication Map (Prevents Duplicate Calls)      │
 │  - Interactive Mock Interview & Roadmap Flow                           │
 └───────────────────────────────────┬────────────────────────────────────┘

@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark, .dark *, [data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --color-page-light: #F5F7FC;
+  --color-page-dark: #080D1B;
+  --color-card-light: #FFFFFF;
+  --color-card-dark: #111A2E;
+  --color-elevated-dark: #17233B;
+  --color-surface-secondary-light: #EEF2FF;
+  --color-border-light: #DCE3EF;
+  --color-border-dark: #293653;
+  --color-text-primary-light: #111827;
+  --color-text-primary-dark: #F1F5F9;
+  --color-text-secondary-light: #64748B;
+  --color-text-secondary-dark: #A7B4CC;
+  --color-brand-primary-light: #4F46E5;
+  --color-brand-primary-dark: #818CF8;
+  --color-brand-accent-light: #7C3AED;
+  --color-brand-accent-dark: #A78BFA;
+  --color-status-success-light: #059669;
+  --color-status-success-dark: #34D399;
+  --color-status-warning-light: #D97706;
+  --color-status-warning-dark: #FBBF24;
+  --color-status-error-light: #DC2626;
+  --color-status-error-dark: #F87171;
+
+  --color-slate-50: #F5F7FC;
+  --color-slate-100: #EEF2FF;
+  --color-slate-200: #DCE3EF;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: var(--color-slate-400);
+  --color-slate-500: var(--color-slate-500);
+  --color-slate-600: #475569;
+  --color-slate-700: #293653;
+  --color-slate-800: #17233B;
+  --color-slate-900: #111A2E;
+  --color-slate-950: #080D1B;
+}
+
+:root {
+  --app-bg-page: #F5F7FC;
+  --app-bg-card: #FFFFFF;
+  --app-bg-surface-secondary: #EEF2FF;
+  --app-bg-card-elevated: #FFFFFF;
+  --app-text-primary: #111827;
+  --app-text-secondary: #64748B;
+  --app-brand-primary: #4F46E5;
+  --app-brand-accent: #7C3AED;
+  --app-border: #DCE3EF;
+  --app-success: #059669;
+  --app-warning: #D97706;
+  --app-error: #DC2626;
+
+  --color-slate-400: #64748B;
+  --color-slate-500: #64748B;
+}
+
+.dark, [data-theme="dark"] {
+  --app-bg-page: #080D1B;
+  --app-bg-card: #111A2E;
+  --app-bg-surface-secondary: #17233B;
+  --app-bg-card-elevated: #17233B;
+  --app-text-primary: #F1F5F9;
+  --app-text-secondary: #A7B4CC;
+  --app-brand-primary: #818CF8;
+  --app-brand-accent: #A78BFA;
+  --app-border: #293653;
+  --app-success: #34D399;
+  --app-warning: #FBBF24;
+  --app-error: #F87171;
+
+  --color-slate-400: #A7B4CC;
+  --color-slate-500: #A7B4CC;
+}
+
+@layer base {
+  body {
+    background-color: var(--app-bg-page);
+    color: var(--app-text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-theme-page {
+    background-color: var(--app-bg-page);
+  }
+  .bg-theme-card {
+    background-color: var(--app-bg-card);
+  }
+  .bg-theme-card-elevated {
+    background-color: var(--app-bg-card-elevated);
+  }
+  .bg-theme-secondary {
+    background-color: var(--app-bg-surface-secondary);
+  }
+  .text-theme-primary {
+    color: var(--app-text-primary);
+  }
+  .text-theme-secondary {
+    color: var(--app-text-secondary);
+  }
+  .border-theme {
+    border-color: var(--app-border);
+  }
+}
+
+/* Custom sleek scrollbar for code and cards */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}

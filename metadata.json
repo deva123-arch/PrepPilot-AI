@@ -1,0 +1,6 @@
+{
+  "name": "PrepPilot AI",
+  "description": "Contest-ready AI-powered placement preparation platform with personalized skill gap analysis, adaptive 7-day and 30-day roadmaps, dynamic technical mock interviews, and learning velocity tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
